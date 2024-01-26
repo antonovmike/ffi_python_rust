@@ -5,9 +5,9 @@ This project consists of two parts: a Python 3 script that opens the file "examp
 To run this project, you need to follow these steps:
 
 1. Install Python 3 and Rust on your computer.
-2. Clone the project files to a folder on your computer using the command ```bash git clone https://github.com/antonovmike/ffi_python_rust.git```. You should have three files: `main.py`, `src/lib.rs` and `Cargo.toml`. Also, in this folder there should be a file `example.txt` from which you want to read the text.
-3. Open the terminal or command line on your computer and go to the folder with the project files. You can use the command cd to change the directory. For example, if your folder is called project and is located on the desktop, you can enter ```bash cd /home/<username>/ffi_python_rust```.
-4. Run the command cargo ```bash build --release``` in the terminal to compile the Rust script into a dynamic library that can be loaded from Python. This will create a file `rustlib.so` in the `target/release folder`.
-5. Run the command ```bash python3 main.py``` in the terminal to run the Python 3 script that will open the file `example.txt` and read the text from it. Then it will load the Rust library and call the Rust function that will print the text to the terminal.
+2. Clone the project files to a folder on your computer using the command ```git clone https://github.com/antonovmike/ffi_python_rust.git```. You should have three files: `main.py`, `src/lib.rs` and `Cargo.toml`. Also, in this folder there should be a file `example.txt` from which you want to read the text.
+3. Open the terminal or command line on your computer and go to the folder with the project files. You can use the command cd to change the directory. For example, if your folder is called project and is located on the desktop, you can enter ```cd /home/<username>/ffi_python_rust```.
+4. Run the command cargo ```build --release``` in the terminal to compile the Rust script into a dynamic library that can be loaded from Python. This will create a file `rustlib.so` in the `target/release folder`.
+5. Run the command ```python3 main.py``` in the terminal to run the Python 3 script that will open the file `example.txt` and read the text from it. Then it will load the Rust library and call the Rust function that will print the text to the terminal.
 
 If all the steps are done correctly, you should see the text from the file `example.txt` in the terminal. Congratulations, you have successfully run the project!
