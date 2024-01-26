@@ -1,0 +1,11 @@
+[package]
+name = "ffi_python_rust"
+version = "0.1.0"
+edition = "2021"
+authors = ["Mike AntonovMA@outlook.com"]
+
+[dependencies]
+
+[lib]
+name = "rust_ffi"
+crate-type = ["cdylib"]
