@@ -5,6 +5,7 @@ edition = "2021"
 authors = ["Mike AntonovMA@outlook.com"]
 
 [dependencies]
+sqlite = "0.32.0"
 
 [lib]
 name = "rust_ffi"
