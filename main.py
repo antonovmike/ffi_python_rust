@@ -1,8 +1,9 @@
 import ctypes
 
 
-name = input("Enter your name: ")
-birth_year = input("Enter your birth year: ")
-
 rustlib = ctypes.cdll.LoadLibrary("target/release/librust_ffi.so")
-rustlib.print_person(name.encode("utf-8"), birth_year.encode("utf-8"))
+get_hello_world = rustlib.get_hello_world
+get_hello_world.restype = ctypes.c_char_p
+
+hello_world = get_hello_world()
+print(hello_world)
